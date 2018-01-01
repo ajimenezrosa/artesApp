@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.dairoaguas.artesapp.FragmentContact">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:titleTextColor="@color/White" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/my_toolbar_contact"
+        android:background="#5993f5"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Puedes comunicarte con nosotros facilmente, tu opinion es muy importante para nosotros, comunicate a traves de:"
+            android:textColor="@color/White"
+            android:textSize="18dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbTwitter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Twitter"
+                android:textColor="@color/White"
+                android:theme="@style/RadioButtonStyle" />
+
+            <RadioButton
+                android:id="@+id/rbFacebook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Facebook"
+                android:textColor="@color/White"
+                android:theme="@style/RadioButtonStyle" />
+
+            <RadioButton
+                android:id="@+id/rbEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Email"
+                android:textColor="@color/White"
+                android:theme="@style/RadioButtonStyle" />
+
+            <RadioButton
+                android:id="@+id/rbWeb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Sitio Web"
+                android:textColor="@color/White"
+                android:theme="@style/RadioButtonStyle" />
+
+        </RadioGroup>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fbSendContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:elevation="10dp"
+            android:src="@drawable/ic_menu_send"
+            app:backgroundTint="#fff" />
+
+    </LinearLayout>
+
+</RelativeLayout>

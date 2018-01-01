@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_choose"
+            android:icon="@drawable/ic_elegir"
+            android:title="Elegir" />
+        <item
+            android:id="@+id/nav_upload"
+            android:icon="@drawable/ic_upload_design"
+            android:title="Subir mi diseño" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_shopping_cart"
+            android:title="Mis pedidos" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Mi cuenta" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartir" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contactanos" />
+        </menu>
+    </item>
+
+</menu>

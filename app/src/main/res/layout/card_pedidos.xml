@@ -1,0 +1,107 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivArticulo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:elevation="2sp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/btMas"
+                android:text="$ 100.000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvEstado"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/ivArticulo"
+                android:layout_toStartOf="@+id/tvPrecio"
+                android:padding="5dp"
+                android:text="Descripcion del producto,aqui se hara toda la descripcion con detalle de cada producto" />
+
+            <TextView
+                android:id="@+id/tvCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/btMas"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tvDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="X"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btMas"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tvCantidad"
+                android:background="@color/colorAccent"
+                android:textColor="#fff"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btMenos"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/tvCantidad"
+                android:layout_toStartOf="@+id/btMas"
+                android:background="@color/colorAccent"
+                android:text="-"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/tvEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivArticulo"
+                android:text="ESTADO: PEDIDO"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

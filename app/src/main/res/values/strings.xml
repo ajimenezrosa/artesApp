@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">ArtesApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+    <string-array name="Tamaño">
+        <item>Sin Información</item>
+        <item>Pequeño</item>
+        <item>Mediano</item>
+        <item>Grande</item>
+    </string-array>
+
+    <string-array name="Colores">
+        <item>Sin Información</item>
+        <item>Amarillo</item>
+        <item>Azul</item>
+        <item>Rojo</item>
+        <item>Negro</item>
+        <item>Blanco</item>
+        <item>Naranja</item>
+        <item>Verde</item>
+    </string-array>
+
+    <string-array name="Trenzado">
+        <item>Sin Información</item>
+        <item>Cosido de Puntada</item>
+        <item>Cosido de envoltura</item>
+        <item>Cosido Redondo</item>
+        <item>Cosido en Cruz</item>
+        <item>Cosido Español doble</item>
+        <item>Trenza secreta (tres cabos)</item>
+        <item>Cosido Central</item>
+        <item>Cosido de Azote</item>
+        <item>Cosido en Lazo</item>
+    </string-array>
+
+    <string-array name="Vueltas">
+        <item>Sin Información</item>
+        <item>7 o lica</item>
+        <item>9 o ribete</item>
+        <item>11 o pacotilla</item>
+        <item>15 o Quinceano</item>
+        <item>21</item>
+        <item>23</item>
+        <item>27</item>
+        <item>31</item>
+    </string-array>
+</resources>
